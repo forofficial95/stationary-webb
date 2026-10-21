@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PaperNest | Stationery Store</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header class="header">
+        <a href="#" class="logo">✏️ PaperNest<span>.</span></a>
+
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#products">Products</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <button class="cart-button" id="cart-button">
+            🛒 Cart (<span id="cart-count">0</span>)
+        </button>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <p class="eyebrow">YOUR CREATIVE CORNER</p>
+                <h1>Make Every Page<br> <span>Beautiful.</span></h1>
+                <p>
+                    Discover lovely notebooks, colorful pens,
+                    art supplies and everyday essentials.
+                </p>
+                <a href="#products" class="shop-button">Shop Now →</a>
+            </div>
+            <div class="hero-art" aria-label="Stationery illustration">
+                <span class="art-circle"></span>
+                <div class="art-card">
+                    <span class="art-emoji">📒</span>
+                    <h3>Dream. Write. Create.</h3>
+                    <p>Your ideas start here!</p>
+                </div>
+                <span class="floating-pencil">✏️</span>
+                <span class="floating-star">✦</span>
+            </div>
+        </section>
+
+        <section class="features">
+            <div>📦 <strong>Careful Packaging</strong></div>
+            <div>🎨 <strong>Creative Supplies</strong></div>
+            <div>💝 <strong>Made for You</strong></div>
+        </section>
+
+        <section class="products-section" id="products">
+            <div class="section-heading">
+                <p class="eyebrow">FIND YOUR FAVORITES</p>
+                <h2>Our Stationery Collection</h2>
+                <p>Little things that inspire big ideas.</p>
+            </div>
+
+            <div class="search-row">
+                <input
+                    type="search"
+                    id="search-input"
+                    placeholder="Search notebooks, pens, art supplies..."
+                    aria-label="Search products"
+                >
+                <select id="category-filter" aria-label="Filter by category">
+                    <option value="all">All Categories</option>
+                    <option value="Notebooks">Notebooks</option>
+                    <option value="Writing">Writing</option>
+                    <option value="Art">Art Supplies</option>
+                    <option value="Accessories">Accessories</option>
+                </select>
+            </div>
+
+            <div class="product-grid" id="product-grid"></div>
+            <p id="empty-message" class="empty-message" hidden>
+                No products found. Try another search!
+            </p>
+        </section>
+
+        <section class="about-section" id="about">
+            <div class="about-icon">🖍️📚</div>
+            <div>
+                <p class="eyebrow">A LITTLE ABOUT US</p>
+                <h2>For the love of writing.</h2>
+                <p>
+                    At PaperNest, we believe that every great idea
+                    begins with the right stationery. Explore products
+                    that make studying, planning and creating more fun.
+                </p>
+            </div>
+        </section>
+
+        <section class="contact-section" id="contact">
+            <p class="eyebrow">LET'S CONNECT</p>
+            <h2>Need a little help?</h2>
+            <p>Have questions about our stationery collection?</p>
+            <a href="mailto:hello@papernest.example" class="shop-button">
+                Email Us →
+            </a>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <a href="#home" class="logo">✏️ PaperNest<span>.</span></a>
+        <p>Made with ♥ for stationery lovers.</p>
+        <p>© <span id="year"></span> PaperNest. All rights reserved.</p>
+    </footer>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+</body>
+</html>
